@@ -1,0 +1,6 @@
+This library is a modified version of the JoystickView widget (and its
+associated classes) available from the mobile-anarchy-widgets project on Google
+Code (http://mobile-anarchy-widgets.googlecode.com). I've stripped the code to
+my needs and added some customization options that I needed for my own project.
+
+		/Joakim Andersson, 2011-11-13
