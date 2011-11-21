@@ -29,10 +29,12 @@
 		<attr name="orientation" format="string"/>
 		<attr name="bgSrc" format="reference"/>
 		<attr name="handleSrc" format="reference"/>
+		<attr name="maxJoystickSize" format="dimension"/>
 	</declare-styleable>
 	
 	<declare-styleable name="SplitJoystickView">
 	    <attr name="leftControls" format="boolean"/>
+		<attr name="maxJoystickSize"/>
 		<attr name="vertBgSrc" format="reference"/>
 		<attr name="vertHandleSrc" format="reference"/>
 	    <attr name="spacerSrc" format="reference"/>

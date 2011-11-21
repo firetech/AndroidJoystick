@@ -85,12 +85,15 @@ public class SplitJoystickView extends LinearLayout {
 		
 		TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.SplitJoystickView);
 		if (a != null) {
+			int maxSize = a.getDimensionPixelSize(R.styleable.SplitJoystickView_maxJoystickSize, 0);
 			this.setLeftControls(a.getBoolean(R.styleable.SplitJoystickView_leftControls, false));
 			stickVertical.setBackground(a.getResourceId(R.styleable.SplitJoystickView_vertBgSrc, R.drawable.joystick_bg_vert));
 			stickVertical.setHandle(a.getResourceId(R.styleable.SplitJoystickView_vertHandleSrc, R.drawable.joystick_handle));
+			stickVertical.setMaxSize(maxSize);
 			this.setSpacer(a.getResourceId(R.styleable.SplitJoystickView_spacerSrc, 0));
 			stickHorizontal.setBackground(a.getResourceId(R.styleable.SplitJoystickView_horizBgSrc, R.drawable.joystick_bg_horiz));
 			stickHorizontal.setHandle(a.getResourceId(R.styleable.SplitJoystickView_horizHandleSrc, R.drawable.joystick_handle));
+			stickHorizontal.setMaxSize(maxSize);
 		}
 	}
 
